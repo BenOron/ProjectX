@@ -1,0 +1,86 @@
+<div class="col-xs-6 eskaeskaStep1 eskaeskaStep33">
+   <!-- <div class="form-group eskaeskaStep3">
+        <label for="{{que.id}}" class="control" data-ng-repeat="que in question3.question33">
+            <input  name="{{que.id}}"   ng-model="formData.question33"/>
+            {{que.text}}
+        </label>-->
+    <div class="form-group">
+        <label for="eskaeskaStep3_taashlom1">תשלום ראשון</label>
+        <div class="control">
+            <input  name="eskaeskaStep3_taashlom1" class="form-control"  ng-model="formData.eskaeskaStep3_taashlom1">
+            <select for="eskaeskaStep3_taashlom1_soghon" class="form-group" ng-model="formData.eskaeskaStep3_taashlom1_soghon">צורת תשלום
+                <option name="eskaeskaStep3_taashlom1_soghon" ng-repeat="x in soghon.question" >{{x.text}}</option>
+            </select>
+            <div class="form-group bhira"  ng-show="formData.eskaeskaStep3_taashlom1_soghon=='משכנתא'" >
+                <br/>
+                <div class="form-group"><label for="eskaeskaStep3_taashlom1_bhira">מועד תשלום המשכנתא</label></div>
+                <div class="control">
+                    <input  name="eskaeskaStep3_taashlom1_bhira" class="form-control" type="date" ng-model="formData.eskaeskaStep3_taashlom1_bhira">
+                </div>
+            </div>
+            <div class="form-group bhira"  ng-show="formData.eskaeskaStep3_taashlom1_soghon=='כנגד משכנתא'" >
+                <br/>
+                <div class="form-group"><label for="eskaeskaStep3_taashlom1_bhira1">מועד המצאת "מכתב כוונות"</label></div>
+                <div class="control">
+                    <input  name="eskaeskaStep3_taashlom1_bhira1 " class="form-control" type="date" ng-model="formData.eskaeskaStep3_taashlom1_bhira1">
+                </div>
+            </div>
+        </div>
+    </div>
+<br/>
+    <div class="form-group eskaeskaStep3" ng-show="formData.eskaeskaStep3_taashlom1">
+        <label for="eskaeskaStep3_taashlom2">תשלום שני</label>
+        <div class="control">
+            <input  name="eskaeskaStep3_taashlom2" class="form-control"  ng-model="formData.eskaeskaStep3_taashlom2">
+            <select for="eskaeskaStep3_taashlom2_soghon" class="form-group" ng-model="formData.eskaeskaStep3_taashlom2_soghon">צורת תשלום
+                <option name="eskaeskaStep3_taashlom2_soghon" ng-repeat="x in soghon.question" >{{x.text}}</option>
+            </select>
+            <div class="form-group bhira"  ng-show="formData.eskaeskaStep3_taashlom2_soghon=='משכנתא'" >
+                <br/>
+                <div class="form-group"><label for="eskaeskaStep3_taashlom2_bhira">מועד תשלום המשכנתא</label></div>
+                <div class="control">
+                    <input  name="eskaeskaStep3_taashlom2_bhira" class="form-control" type="date" ng-model="formData.eskaeskaStep3_taashlom2_bhira">
+                </div>
+            </div>
+            <div class="form-group bhira"  ng-show="formData.eskaeskaStep3_taashlom2_soghon=='כנגד משכנתא'" >
+                <br/>
+                <div class="form-group"><label for="eskaeskaStep3_taashlom2_bhira1">מועד המצאת "מכתב כוונות"</label></div>
+                <div class="control">
+                    <input  name="eskaeskaStep3_taashlom2_bhira1 " class="form-control" type="date" ng-model="formData.eskaeskaStep3_taashlom2_bhira1">
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <br/>
+    <div class="form-group eskaeskaStep3"  ng-show="formData.eskaeskaStep3_taashlom2">
+        <label for="eskaeskaStep3_taashlom3">תשלום שלישי</label>
+        <div class="control">
+            <input  name="eskaeskaStep3_taashlom3" class="form-control"  ng-model="formData.eskaeskaStep3_taashlom3">
+            <select for="eskaeskaStep3_taashlom3_soghon" class="form-group" ng-model="formData.eskaeskaStep3_taashlom3_soghon">צורת תשלום
+                <option name="eskaeskaStep3_taashlom3_soghon" ng-repeat="x in soghon.question" >{{x.text}}</option>
+            </select>
+        </div>
+    </div>
+    <br/>
+    <div class="form-group eskaeskaStep3"  ng-show="formData.eskaeskaStep3_taashlom3">
+        <label for="eskaeskaStep3_taashlom4">תשלום רביעי</label>
+        <div class="control">
+            <input  name="eskaeskaStep3_taashlom4" class="form-control"  ng-model="formData.eskaeskaStep3_taashlom4">
+            <select for="eskaeskaStep3_taashlom4_soghon" class="form-group" ng-model="formData.eskaeskaStep3_taashlom4_soghon">צורת תשלום
+                <option name="eskaeskaStep3_taashlom4_soghon" ng-repeat="x in soghon.question" >{{x.text}}</option>
+            </select>
+        </div>
+    </div>
+    <br/>
+</div>
+</div>
+
+    <div class="form-group row">
+        <div class="col-xs-6 col-xs-offset-3 marginTop">
+            <a ui-sref="form.eskaStep4" class="btn btn-block btn-info">
+                <span class="glyphicon glyphicon-circle-arrow-left"> </span>  שלב הבא
+            </a>
+        </div>
+    </div>
+

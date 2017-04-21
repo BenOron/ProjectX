@@ -1,0 +1,36 @@
+    <script src="script.js"></script>
+
+<div class="form-group row "></div>
+    <div class="choiceForm">
+        <h3 class="list-group choiceTitle ">:מצב רישומי </h3>
+        <label class="choice list-group-item" data-ng-repeat="choice in question2.choices">
+            <input type="radio" name="response" value={{choice.text}} name="chooseMatzv" ng-click="setChoiceForQuestion(question2, choice)" ng-model="formData.chooseMatzv" />
+            {{choice.text}}
+        </label>
+    </div>
+<div class="col-xs-6 eskaeskaStep1">
+    <div class="form-group">
+        <label for="eskaeskaStep1_gosh">:גוש</label>
+        <input id="gosh" type="text" class="form-control" name="eskaeskaStep1_gosh" ng-model="formData.eskaeskaStep1_gosh">
+    </div>
+
+    <div class="form-group">
+        <label for="eskaeskaStep1_helaka">:חלקה</label>
+        <input id="hilka" type="text" class="form-control"  name="eskaeskaStep1_helaka" ng-model="formData.eskaeskaStep1_helaka">
+    </div>
+
+    <div class="form-group">
+        <label for="eskaeskaStep1_tathelaka">:תת חלקה</label>
+        <input type="text" ng-change="checkstatusNasah()" class="form-control" name="eskaeskaStep1_tathelaka" ng-model="formData.eskaeskaStep1_tathelaka">
+    </div>
+</div>
+
+
+    <div class="form-group row">
+        <div class="col-xs-6 col-xs-offset-3 marginTop">
+            <a ui-sref="form.eskaStep2" class="btn btn-block btn-info">
+                <span class="glyphicon glyphicon-circle-arrow-left"> </span>  שלב הבא
+            </a>
+        </div>
+    </div>
+
